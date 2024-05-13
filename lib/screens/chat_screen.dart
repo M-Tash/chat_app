@@ -44,7 +44,7 @@ class ChatScreen extends StatelessWidget {
                   automaticallyImplyLeading: false,
                   backgroundColor: kPrimaryColor,
                   title: Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(bottom: 10, left: 50),
                     child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
