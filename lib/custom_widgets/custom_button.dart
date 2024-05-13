@@ -1,25 +1,24 @@
+import 'package:chat_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   final String buttonText;
-  const CustomButton({super.key, required this.buttonText});
-
+  CustomButton({super.key, this.onTap, required this.buttonText});
+  VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
           backgroundColor: Colors.white,
-          foregroundColor: Color(0xff2B475E),
-          fixedSize: Size(372.7, 15),
+          foregroundColor: kPrimaryColor,
+          fixedSize: const Size(372.7, 15),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
-      onPressed: () {
-        //todo:login
-      },
+      onPressed: onTap,
       child: Text(
         buttonText,
         style: const TextStyle(
-          color: Color(0xff2B475E),
+          color: kPrimaryColor,
           fontSize: 21,
         ),
       ),
