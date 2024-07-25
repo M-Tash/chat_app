@@ -29,9 +29,3 @@ This is a simple chat application built with Flutter Using Firestore Firebase fo
 
 
 
-## Installation
-
-- Clone the repository:
-
-```bash
-git clone https://github.com/M-Tash/chat_app.git
